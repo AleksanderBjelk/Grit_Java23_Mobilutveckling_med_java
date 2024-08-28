@@ -1,11 +1,14 @@
 package com.example.lektion2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -62,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv1 = findViewById(R.id.textView2);
         ImageView iv = findViewById(R.id.imageViewDroid);
+        Button b = findViewById(R.id.change);
+        b.setOnClickListener((e)-> {
+            Toast.makeText(MainActivity.this, "byt sida", Toast.LENGTH_LONG).show();
+            Intent a2 = new Intent(MainActivity.this, MainActivity2.class);
+            startActivity(a2);
+
+        });
 
        // tv1.setText(R.string.lang);
         tv1.setText(getResources().getStringArray(R.array.system)[1]);
