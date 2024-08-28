@@ -42,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     b2.setText("Hejdå");
                     b2.setBackgroundColor(Color.RED);
-
                 }
             });
 
