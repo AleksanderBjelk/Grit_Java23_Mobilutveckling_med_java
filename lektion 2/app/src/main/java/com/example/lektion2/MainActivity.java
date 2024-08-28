@@ -1,5 +1,6 @@
 package com.example.lektion2;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
@@ -7,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -61,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
        // tv1.setText(R.string.lang);
         tv1.setText(getResources().getStringArray(R.array.system)[1]);
+        tv1.setTextColor(getResources().getColor(R.color.purple));
+        //samma sak som ovanför
+        tv1.setTextColor(ContextCompat.getColor(MainActivity.this,R.color.purple));
+
         iv.setAlpha(0.2f);
         iv.setRotationY(170);
         iv.setImageResource(R.drawable.img_1033);
