@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tv1 = findViewById(R.id.textView2);
         ImageView iv = findViewById(R.id.imageViewDroid);
 
-        tv1.setText(R.string.lang);
+       // tv1.setText(R.string.lang);
+        tv1.setText(getResources().getStringArray(R.array.system)[1]);
         iv.setAlpha(0.2f);
         iv.setRotationY(170);
         iv.setImageResource(R.drawable.img_1033);

@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Lektion 2</string>
     <string name="lang">English</string>
+
+    <string-array name="system">
+        <item>earth</item>
+        <item>@string/lang</item>
+    </string-array>
+
 </resources>
