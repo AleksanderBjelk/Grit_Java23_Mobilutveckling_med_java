@@ -17,10 +17,12 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
+import androidx.fragment.app.FragmentManager;
 
 
 public class MainActivity extends AppCompatActivity {
+
+    //FragmentManager fm;
     @Override
     protected void onStart() {
         super.onStart();
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        //fm = getSupportFragmentManager();
+
         TextView tv1 = findViewById(R.id.textView2);
         ImageView iv = findViewById(R.id.imageViewDroid);
         Button b = findViewById(R.id.change);
@@ -72,6 +76,19 @@ public class MainActivity extends AppCompatActivity {
             startActivity(a2);
 
         });
+
+    /*    b.setOnClickListener((e)->{
+            Toast.makeText(MainActivity.this,"Change Fragments", Toast.LENGTH_LONG);
+            tv1.setText(String.valueOf(connected));
+
+            if (fragNumber==1) {
+                fm.beginTransaction().add(R.id.fragmentContainerView2, BlankFragment2.class, null).commit();
+                fragNumber = 2;
+            }else{
+                fm.beginTransaction().add(R.id.fragmentContainerView1, BlankFragment2.class, null).commit();
+                fragNumber = 1;
+            }
+        });*/
 
        // tv1.setText(R.string.lang);
         tv1.setText(getResources().getStringArray(R.array.system)[1]);
