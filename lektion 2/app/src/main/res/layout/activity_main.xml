@@ -31,5 +31,11 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/img_1033" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

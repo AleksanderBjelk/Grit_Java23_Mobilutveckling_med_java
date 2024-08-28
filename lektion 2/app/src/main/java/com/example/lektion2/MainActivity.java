@@ -3,6 +3,7 @@ package com.example.lektion2;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,8 +56,10 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        TextView tv1 = findViewById(R.id.textView2);
         ImageView iv = findViewById(R.id.imageViewDroid);
 
+        tv1.setText(R.string.lang);
         iv.setAlpha(0.2f);
         iv.setRotationY(170);
         iv.setImageResource(R.drawable.img_1033);
