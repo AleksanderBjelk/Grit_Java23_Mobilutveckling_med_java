@@ -4,6 +4,10 @@
 
     <string-array name="system">
         <item>earth</item>
+        <item>moon</item>
+        <item>venus</item>
+        <item>mercury</item>
+        <item>jupiter</item>
         <item>@string/lang</item>
     </string-array>
 
