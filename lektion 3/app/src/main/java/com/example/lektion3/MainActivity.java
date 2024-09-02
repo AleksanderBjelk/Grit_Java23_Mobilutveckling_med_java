@@ -2,7 +2,12 @@ package com.example.lektion3;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Context;
+import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.VibrationEffect;
+import android.os.Vibrator;
 import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onCreate: ");
         Log.d(TAG, "Hello: ");
 
+        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.random);
+        mp.start();
+
+        findViewById(R.id.button).setOnClickListener((e)->{
+            vibrate();
+        });
+
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -34,5 +47,15 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+    void vibrate() {
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        // Vibrate for 500 milliseconds
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            v.vibrate(VibrationEffect.createOneShot(500, VibrationEffect.DEFAULT_AMPLITUDE));
+        } else {
+            //deprecated in API 26
+            v.vibrate(500);
+        }
     }
 }
