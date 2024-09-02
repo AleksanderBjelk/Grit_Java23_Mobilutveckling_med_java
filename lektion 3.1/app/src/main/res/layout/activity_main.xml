@@ -15,21 +15,23 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name" />
+        android:hint="input for saving"
+        android:inputType="text" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="325dp"
         android:layout_height="8dp"
-        android:layout_weight="1"
         android:layout_gravity="center"
-        android:text="Button"
+        android:layout_weight="1"
+        android:text="save data"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="9dp" />
 
     <TextView
+        android:id="@+id/text2"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3"
@@ -45,14 +47,6 @@
         android:minWidth="40pt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="9dp" />
 
 
 </LinearLayout>
