@@ -20,11 +20,12 @@
 
     <Button
         android:id="@+id/button"
-        android:textSize="39sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_width="325dp"
+        android:layout_height="8dp"
         android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="Button"
+        android:textSize="20sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="9dp" />
 
