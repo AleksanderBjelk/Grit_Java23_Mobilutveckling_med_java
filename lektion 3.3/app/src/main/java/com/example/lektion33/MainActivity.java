@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -30,23 +31,39 @@ Button btn;
          et = findViewById(R.id.editTextText);
          btn = findViewById(R.id.button);
 
-         et.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-             @Override
-             public void onFocusChange(View v, boolean hasFocus) {
-                 if(!hasFocus)
-                 Log.i("Aleksander", "unfocused ");
-             }
-         });
+        et.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus)
+                    Log.i("Aleksander", "unfocused");
 
-         et.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-             @Override
-             public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
+            }
+        });
 
-                 return false;
-             }
-         });
 
-         btn.setOnClickListener((e)->{
+        et.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                switch (actionId) {
+                    case EditorInfo.IME_ACTION_GO:
+                        Log.i("Aleksander", "go");
+                        break;
+                    case EditorInfo.IME_ACTION_DONE:
+                        Log.i("Aleksander", "done");
+                        break;
+                    case EditorInfo.IME_ACTION_NEXT:
+                        Log.i("Aleksander", "next");
+                        break;
+                    case EditorInfo.IME_ACTION_PREVIOUS:
+                        Log.i("Aleksander", "prev");
+                        return true;
+                }
+                return false;
+            }
+        });
+
+
+        btn.setOnClickListener((e)->{
              Intent i = new Intent(MainActivity.this, MainActivity2.class);
              i.putExtra("Key", et.getText().toString());
              startActivity(i);
