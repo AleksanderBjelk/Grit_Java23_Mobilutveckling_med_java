@@ -3,6 +3,7 @@ package com.example.lektion31;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -20,6 +22,21 @@ public class MainActivity extends AppCompatActivity {
     TextView tv;
     EditText et;
     Button btn;
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        tv.setText(savedInstanceState.getString("Key2", "[Text not found]"));
+
+        Log.d("Aleksander", "onRestoreInstanceState: RESTORE");
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("Key2", "test2");
+        Log.d("Aleksander", "onSaveInstanceState: SAVE");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         et = findViewById(R.id.editTextText);
         btn = findViewById(R.id.button);
         //när man startar appen så sötter den texten från sharedpref
-        tv.setText(sharedPref.getString("key", "[No text found]"));
+        //tv.setText(sharedPref.getString("key", "[No text found]"));
 
         btn.setOnClickListener((e)-> {
             String inputtedText = et.getText().toString();
