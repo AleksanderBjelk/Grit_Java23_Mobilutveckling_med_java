@@ -21,7 +21,10 @@ class MainActivity : AppCompatActivity() {
         return 5
     }
 
-
+    fun merge(vararg array:String ){
+        for (x in array)
+            Log.d("Aleksander", "loop: "+x)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -94,6 +97,7 @@ class MainActivity : AppCompatActivity() {
 
         for (i in 10 downTo 0) //multiplicerar med 2
             Log.i("Aleksander", "range reverse: " + i)
+        merge("hej", "alla", "ihop")
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
