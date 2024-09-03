@@ -16,10 +16,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 11 null">
+    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="p">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/Human.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/Human.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lektion 3.1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lektion 3.1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +128,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="android.template.-496325884">
+      <recent name="com.example.lektion4" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Lektion_4.app.main" />
@@ -267,7 +273,14 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1725355032894</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="push 12 extensions">
+      <option name="closed" value="true" />
+      <created>1725356876151</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1725356876151</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -280,6 +293,8 @@
     <MESSAGE value="push 8 interface" />
     <MESSAGE value="push 9 casting" />
     <MESSAGE value="push 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="push 10" />
+    <MESSAGE value="push 12 extensions" />
+    <MESSAGE value="p" />
+    <option name="LAST_COMMIT_MESSAGE" value="p" />
   </component>
 </project>

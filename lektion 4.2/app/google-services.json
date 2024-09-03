@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "866475140642",
+    "firebase_url": "https://scrum-board-93345-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "scrum-board-93345",
+    "storage_bucket": "scrum-board-93345.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866475140642:android:b554eb0ea03b2d0b714c7b",
+        "android_client_info": {
+          "package_name": "com.example.lektion42"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBebCKrZW923i6MrJuEMyHpqRf-2T4kTxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
