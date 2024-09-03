@@ -8,8 +8,13 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
-    lateinit var tv: TextView;
-    lateinit var x:Any
+    companion object{
+        var defualtColor:String = "#ff00ff"
+    }
+
+
+    private lateinit var tv: TextView;
+    public lateinit var x:Any
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +33,12 @@ class MainActivity : AppCompatActivity() {
         var c:Char = 'c'
         var bool:Boolean = false
         var x:Any = arrayOf("h","yo","Aleksander")
+
+        //final
+        val CONST_VALUE:Int = 2000;
+
+        //int x=12,y=2,z=34 (java)
+        var y:Int=5; var s:Int=6;
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
