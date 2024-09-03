@@ -1,6 +1,7 @@
 package com.example.lektion4
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -40,6 +41,16 @@ class MainActivity : AppCompatActivity() {
         //int x=12,y=2,z=34 (java)
         var y:Int=5; var s:Int=6;
 
+        var ia:IntArray = IntArray(5)
+        var ia2:IntArray = intArrayOf(1,2,3,4,5)
+        var ba:BooleanArray = BooleanArray(5)
+        var ba2:BooleanArray = booleanArrayOf(true,false)
+        var sa:Array<String> = arrayOf<String>("hej, tjena")
+
+        if(1<5){
+            Log.d("Aleksander", "hej ")
+        } else
+            Log.d("Aleksander", "hejdå: ")
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
