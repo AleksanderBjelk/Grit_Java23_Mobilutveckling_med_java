@@ -1,6 +1,6 @@
 package com.example.lektion4
 
-class Human {
+class Human:Animal {
     var age:Int = 0
     var name:String
 

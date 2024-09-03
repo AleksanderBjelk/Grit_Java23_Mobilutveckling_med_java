@@ -103,6 +103,9 @@ class MainActivity : AppCompatActivity() {
 
         var h:Human = Human("Aleksander")
 
+        var x2:Any = findViewById(R.id.text) as TextView
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
