@@ -16,7 +16,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 8 interface" />
+    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 9 casting">
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -245,7 +247,21 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1725354203622</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="push 8 interface">
+      <option name="closed" value="true" />
+      <created>1725354506950</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1725354506950</updated>
+    </task>
+    <task id="LOCAL−00008" summary="push 9 casting">
+      <option name="closed" value="true" />
+      <created>1725354758300</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1725354758300</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -256,6 +272,7 @@
     <MESSAGE value="push 6 merge" />
     <MESSAGE value="push 7 class" />
     <MESSAGE value="push 8 interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="push 8 interface" />
+    <MESSAGE value="push 9 casting" />
+    <option name="LAST_COMMIT_MESSAGE" value="push 9 casting" />
   </component>
 </project>

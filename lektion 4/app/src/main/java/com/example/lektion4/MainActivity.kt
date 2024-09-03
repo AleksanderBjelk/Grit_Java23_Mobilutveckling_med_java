@@ -103,7 +103,11 @@ class MainActivity : AppCompatActivity() {
 
         var h:Human = Human("Aleksander")
 
+        //casting
         var x2:Any = findViewById(R.id.text) as TextView
+        var x3:Any = findViewById<TextView>(R.id.text)
+        Log.i("Aleksander", "is human ?" + (h is Human).toString())
+
 
 
 
