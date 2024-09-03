@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
         } else
             Log.d("Aleksander", "hejdå: ")
 
+        Log.d("Aleksander", if (1==1) "hej" else "hejdå")
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
