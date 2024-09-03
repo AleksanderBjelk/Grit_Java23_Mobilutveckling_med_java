@@ -17,6 +17,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tv: TextView;
     public lateinit var x:Any
 
+    fun aleksander(): Int {
+        return 5
+    }
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -74,6 +80,21 @@ class MainActivity : AppCompatActivity() {
             //Log.d("Aleksander", "while" + i + " loops")
             i++
         }
+
+        var s4:Array<String> = arrayOf("hej", "he", "yo")
+        for (x in s4)
+            Log.i("Aleksander", "foreach " + x)
+
+
+        for (i in 0 .. 10)
+        Log.i("Aleksander", "range: " + i)
+
+        for (i in 0 .. 10 step 2) //multiplicerar med 2
+            Log.i("Aleksander", "range: " + i)
+
+        for (i in 10 downTo 0) //multiplicerar med 2
+            Log.i("Aleksander", "range reverse: " + i)
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
