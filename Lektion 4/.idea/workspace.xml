@@ -16,11 +16,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="psuh 4 while">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 5">
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/lektion4/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,13 +207,21 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1725352761051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL−00003" summary="push 5">
+      <option name="closed" value="true" />
+      <created>1725353566874</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1725353566874</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push 1 variabler" />
     <MESSAGE value="push 2 array if" />
     <MESSAGE value="psuh 4 while" />
-    <option name="LAST_COMMIT_MESSAGE" value="psuh 4 while" />
+    <MESSAGE value="push 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="push 5" />
   </component>
 </project>

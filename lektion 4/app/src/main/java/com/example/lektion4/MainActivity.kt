@@ -97,7 +97,11 @@ class MainActivity : AppCompatActivity() {
 
         for (i in 10 downTo 0) //multiplicerar med 2
             Log.i("Aleksander", "range reverse: " + i)
+
+
         merge("hej", "alla", "ihop")
+
+        var h:Human = Human("Aleksander")
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
