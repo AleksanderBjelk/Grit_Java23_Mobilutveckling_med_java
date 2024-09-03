@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         tv = findViewById(R.id.text)
 
         //variabler
-        var foo = 5
+        var foo = 1
         var bar:Int = 5 //datatypen
         var foo2:String = "hejsan"
         var decimalTal:Float = 0.5f //float
@@ -53,6 +53,27 @@ class MainActivity : AppCompatActivity() {
             Log.d("Aleksander", "hejdå: ")
 
         Log.d("Aleksander", if (1==1) "hej" else "hejdå")
+        
+        when (foo){
+            1 -> {
+                Log.d("Aleksander", "onCreate: ")
+            }
+            2 -> Log.d("Aleksander", "onCreate: ")
+            3 -> Log.d("Aleksander", "onCreate: ")
+            else -> Log.d("Aleksander", "onCreate: else")
+            
+        }
+
+        var s3:String = ""
+        Log.d("Aleksander", if(s3==="") "YES" else "NO")
+
+        var i = 0
+        while( i < 10)
+        {
+            Log.d("Aleksander", "while ${i}loops")
+            //Log.d("Aleksander", "while" + i + " loops")
+            i++
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
