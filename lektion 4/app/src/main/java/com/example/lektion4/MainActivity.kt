@@ -3,6 +3,7 @@ package com.example.lektion4
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -89,7 +90,7 @@ class MainActivity : AppCompatActivity() {
             Log.i("Aleksander", "foreach " + x)
 
 
-        for (i in 0 .. 10)
+        //for (i in 0 .. 10)
         Log.i("Aleksander", "range: " + i)
 
         for (i in 0 .. 10 step 2) //multiplicerar med 2
@@ -107,6 +108,19 @@ class MainActivity : AppCompatActivity() {
         var x2:Any = findViewById(R.id.text) as TextView
         var x3:Any = findViewById<TextView>(R.id.text)
         Log.i("Aleksander", "is human ?" + (h is Human).toString())
+
+        var s9:String? = "hej"
+        h.name="Aleksander"
+
+        fun String.log(){
+            Toast.makeText(baseContext, this, Toast.LENGTH_LONG).show()
+        }
+        fun String.addMore() = this+"MORE"
+
+        s9!!.addMore().log()
+
+        Log.i("Aleksander", "onCreate: "+s9?.length)
+
 
 
 
