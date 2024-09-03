@@ -16,7 +16,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 7 class" />
+    <list default="true" id="c992224c-4ba7-421e-992c-898bd62dd534" name="Changes" comment="push 8 interface" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +76,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -237,7 +238,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1725354174857</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="push 7 class">
+      <option name="closed" value="true" />
+      <created>1725354203622</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1725354203622</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +255,7 @@
     <MESSAGE value="push 5" />
     <MESSAGE value="push 6 merge" />
     <MESSAGE value="push 7 class" />
-    <option name="LAST_COMMIT_MESSAGE" value="push 7 class" />
+    <MESSAGE value="push 8 interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="push 8 interface" />
   </component>
 </project>
