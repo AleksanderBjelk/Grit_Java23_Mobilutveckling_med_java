@@ -1,6 +1,5 @@
 package com.example.lektion61
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -15,48 +14,36 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import org.json.JSONObject
 
-class MainActivity : AppCompatActivity() {
+class GOTAPI : AppCompatActivity() {
 
-    lateinit var tv:TextView
-    lateinit var btn:Button
-    lateinit var gBtn:Button
+    lateinit var gotTextview:TextView
+    lateinit var actorButton:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-
-
+        setContentView(R.layout.activity_gotapi)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        gBtn = findViewById(R.id.gBtn)
+        actorButton = findViewById(R.id.getActorButton)
+        gotTextview = findViewById(R.id.gotTextview)
 
-        gBtn.setOnClickListener {
-            val intent = Intent(this, GOTAPI::class.java)
-            startActivity(intent)
-        }
-
-
-        tv = findViewById(R.id.textView)
-        btn = findViewById(R.id.button)
-
-
-        btn.setOnClickListener() {
+        actorButton.setOnClickListener() {
             Log.i("Aleksander", "onCreate: ")
 
 
             var rq: RequestQueue = Volley.newRequestQueue(this)
 
-            var url = "https://italian-jokes.vercel.app/api/jokes"
+            var url = "https://anapioficeandfire.com/api/characters/583"
 
             var request = StringRequest(Request.Method.GET, url, { res ->
 
                 Log.i("Aleksander", "success!!: " + res)
-                tv.text = JSONObject(res).getString("joke")
+                gotTextview.text = JSONObject(res).getJSONArray("playedBy").get(0).toString()
 
             }, {
                 Log.i("Aleksander", "fail!!: ")
@@ -68,5 +55,6 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
     }
 }
